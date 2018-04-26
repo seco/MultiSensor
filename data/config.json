@@ -1,0 +1,18 @@
+{
+  "deviceID":      "New-ESP",
+  "rebootAt":      12,
+  "tempPolling":   900,
+  "MQTT": {
+    "Server":      "192.168.100.10",
+    "Port":        1883,
+    "User":        "openhab",
+    "Password":    "Jabeen01",
+    "tempTopic":   "SH/sensor/HeatIndexLiving",
+    "motionTopic": "SH/sensor/HeatIndexLiving",
+    "reed1Topic":  "SH/sensor/HeatIndexLiving",
+    "reed2Topic":  "SH/sensor/HeatIndexLiving",
+    "reed3Topic":  "SH/sensor/HeatIndexLiving",
+    "reed4Topic":  "SH/sensor/HeatIndexLiving",
+    "inTopic":     "SH/sensor/HeatIndexLiving"
+  }
+}

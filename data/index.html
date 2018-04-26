@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable=0", charset="utf-8">
+		<title>Configure Settings</title>
+		<style>"body { background-color: #808080; font-family: Arial, Helvetica, Sans-Serif; Color: #000000; }"</style>
+	</head>
+	<body>
+		<p><h1>Configure Settings</h1></p>
+  	<form action='http://192.168.100.11/saveChanges' method='POST' target="_self">
+   		<label>Device ID&nbsp&nbsp;&nbsp;&nbsp</label>
+   		  <input type="text" name="deviceID" size="30" value="FrontDoorContact"><label> (Unique ID) </label><br><br>
+   		<label>MQTT Server&nbsp;&nbsp</label>
+   		  <input type="text" name="mqtt_server" size="30" value="192.168.100.10"><label> (MQTT static IP) </label><br>
+   		<label>MQTT Port&nbsp;&nbsp;&nbsp;&nbsp</label>
+   		  <input type="text" name="mqtt_port" size="30" value="1883"><label> (MQTT port typically 1883) </label><br>
+   		<label>MQTT User&nbsp&nbsp;&nbsp;&nbsp</label>
+   		  <input type="text" name="mqtt_user" value="openhab"><label> &nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp(eg. openhab </label><br>
+   		<label>MQTT Password</label>
+   		  <input type="password" name="mqtt_password" value="Jabeen01"><br><br>
+   		<label>MQTT outTopic</label>
+   		  <input type="text" name="mqtt_outTopic" size="30" value="SH/sensor/FrontDoorContact"><label> (eg. SH/sensor/FrontDoorContact) </label><br>
+   		<label>MQTT inTopic&nbsp</label>
+   		  <input type="text" name="mqtt_inTopic" size="30" value="SH/status"><label> (eg. SH/status) </label><br><br>
+
+      <input type="submit" value="Save Changes">
+  		<input type=button onClick="parent.location='/firmware'" value='Firmware Update'>
+		</form>
+	</body>
+</html>
